@@ -1,0 +1,3 @@
+# Cuadro
+
+Cuadro is a tiny library of geometric primitives. Currently only the rectangle class is implemented.
