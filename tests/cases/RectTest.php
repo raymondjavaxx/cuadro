@@ -52,13 +52,14 @@ class RectTest extends \PHPUnit_Framework_TestCase {
 	public function testRectContainingRects() {
 		$rect = Rect::rectContainingRects(array(
 			new Rect(1, 1, 1, 1),
-			new Rect(0, 0, 1, 1)
+			new Rect(0, 0, 1, 1),
+			new Rect(0, -1, 1, 1)
 		));
 
 		$this->assertEquals(0, $rect->x);
-		$this->assertEquals(0, $rect->y);
+		$this->assertEquals(-1, $rect->y);
 		$this->assertEquals(2, $rect->w);
-		$this->assertEquals(2, $rect->h);
+		$this->assertEquals(3, $rect->h);
 	}
 
 	public function testToString() {

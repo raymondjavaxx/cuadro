@@ -138,7 +138,7 @@ class Rect {
 			}
 		}
 
-		return new static($minX, $minY, $maxX - $minX, $maxY - $minX);
+		return new static($minX, $minY, $maxX - $minX, $maxY - $minY);
 	}
 
 	/**
